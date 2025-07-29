@@ -77,7 +77,7 @@ export default function HeroSection() {
           </Label> */}
 
           {/* Domain input field */}
-          <div className="flex items-center gap-0 group">
+          <div className="flex items-center gap-0 group px-2">
             <Input
               id="subdomain-input"
               type="text"
@@ -89,14 +89,14 @@ export default function HeroSection() {
               }}
               onKeyDown={handleKeyDown}
               hasError={!!error}
-              className="rounded-r-none border-r-0 flex-[3] transition-all duration-200 group-hover:shadow-md"
+              className="-mr-1 rounded-r-none border-r-0 flex-[3] transition-all duration-200 group-hover:shadow-md"
               inputClassName="pr-1 text-lg placeholder:text-muted-foreground/60 focus:placeholder:text-muted-foreground/40 py-3"
             />
             <Select
               value={selectedDomain}
               onChange={(e) => setSelectedDomain(e.target.value)}
               hasError={!!error}
-              className="w-28 rounded-l-none flex-shrink-0 transition-all duration-200 group-hover:shadow-md"
+              className="w-32 rounded-l-none flex-shrink-0 transition-all duration-200 group-hover:shadow-md"
               selectClassName="rounded-l-none text-lg py-3"
             >
               <option value=".io.mw">.io.mw</option>
@@ -110,7 +110,7 @@ export default function HeroSection() {
             onClick={handleClaim}
             disabled={isChecking}
             variant="primary"
-            className="w-full sm:w-auto mx-auto text-base transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="w-full sm:w-auto mx-auto text-sm font-base transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             {isChecking ? (
               <span className="flex items-center justify-center gap-2">

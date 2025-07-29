@@ -70,8 +70,8 @@ export function Navigation() {
               </Link>
             </div> */}
           </nav>
-          <Button variant="outline" className="hidden h-10 font-medium md:flex">
-          Connect MCP.do
+          <Button variant="outline" className="hidden h-10 font-base md:flex">
+          Connect MCP
           </Button>
           <div className="flex gap-x-2 md:hidden">
             <Button>Connect MCP</Button>
